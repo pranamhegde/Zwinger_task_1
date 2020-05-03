@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwinger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/Zwinger icon.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+    
+    <div class="topnav" style="width: 100%;">
+        <a class="active" href="index.html">Home</a>
+        <a href="Book_now.html">Book Now</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="About.html">About</a>
+        
+      </div>
+      
+      <!-- Black with white text -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
+      
+      <!-- Blue with white text -->
+      <nav class="navbar navbar-expand-sm bg-primary navbar-dark"></nav>
+      
+      <br>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="Images/Zwinger Modified.png" style="width: 100%; "> 
+        </div>
+        
+        <div class="mySlides">
+            <img src="Images/Slideshow2.jpg" style="width: 100%;"> 
+        </div>
+
+        <div class="mySlides">
+            <img src="Images/Slideshow3.png" style="width: 100%;"> 
+        </div>
+
+        <div class="mySlides">
+            <img src="Images/Slideshow4.png" style="width: 100%;"> 
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+</div>
+<br>
+
+<div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<br>
+
+<div class="welcome" style="text-align: center;">
+    <h1>Welcome to Zwinger</h1>
+    <h2>Find the best hostels for your pets</h2>
+</div>
+
+<table class="booking-table" style="width: 60%; text-align: center;">
+<th>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Select a City</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Bangalore.html">Bangalore</a>
+          <a href="Coming_Soon.html">Delhi</a>
+          <a href="Coming_Soon.html">Gurgaon</a>
+          <a href="Coming_Soon.html">Mumbai</a>
+         
+        </div>
+      </div>
+</th>
+
+<th>
+    <h2>From</h2>
+    <input type="date" onclick="pleaseFunction();">
+</th>
+
+<th>
+    <h2>To</h2>
+    <input type="date" onclick="pleaseFunction();">
+</th>
+
+<th>
+    <input class="Book" type="button" value="BOOK NOW" onclick="pleaseFunction();" />
+</th>
+
+</table>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
